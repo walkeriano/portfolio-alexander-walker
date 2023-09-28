@@ -14,3 +14,8 @@
   --light_gray: #CFCFCF;
   --lighter_gray: #E6E6E6;
 }
+
+
+body{
+  margin: 0;
+}
