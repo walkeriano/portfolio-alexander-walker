@@ -23,7 +23,7 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  body {
+  .cont-body {
     background-color: white; /* Color de fondo en modo oscuro */
   }
 }
