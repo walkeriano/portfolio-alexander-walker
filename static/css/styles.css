@@ -19,6 +19,13 @@
 
 .cont-body {
   font-family: Ubuntu;
+  background-color: white;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: white; /* Color de fondo en modo oscuro */
+  }
 }
 
 /* VARIABLES */
