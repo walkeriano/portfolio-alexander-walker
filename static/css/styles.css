@@ -252,7 +252,7 @@
 }
 
 .perfil-view {
-  width: 80%;
+  width: 90%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -267,7 +267,7 @@
 }
 
 .text-info {
-  width: 40%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -294,17 +294,19 @@
 .cont-programs {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   margin-top: 25px;
-  width: 40vw;
+  width: 100%;
+  gap: 40px;
 }
 
 .cont-programs-design {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   margin-top: 25px;
-  width: 30vw;
+  width: 100%;
+  gap: 50px;
 }
 
 .lenguage-box {
@@ -537,30 +539,34 @@
   gap: 8%;
 }
 
-.con-btns-contact button {
+.con-btns-contact a {
   width: 70px;
   height: 70px;
   border-radius: 50%;
   border: none;
   background-color: rgb(223, 223, 223);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
 }
 
-.con-btns-contact button .cel {
+.con-btns-contact a .cel {
   font-size: 1.3rem;
   color: rgb(0, 68, 255);
 }
 
-.con-btns-contact button .wss {
+.con-btns-contact a .wss {
   font-size: 1.7rem;
   color: rgb(0, 68, 255);
 }
 
-.con-btns-contact button .mail {
+.con-btns-contact a .mail {
   font-size: 1.5rem;
   color: rgb(0, 68, 255);
 }
 
-.con-btns-contact button:hover {
+.con-btns-contact a:hover {
   background-color: rgb(0, 68, 255);
   cursor: pointer;
   .cel,
@@ -718,15 +724,18 @@
   }
 
   .cont-programs {
-    align-items: flex-start;
-    margin-top: 40px;
-    width: 80%;
-    gap: 5vw;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    width: 90%;
+    gap: 40px;
   }
 
   .cont-programs-design {
-    width: 80%;
-    margin-top: 15px;
+    flex-direction: column;
+    width: 95%;
+    margin-top: 35px;
+    gap: 40px;
   }
 
   .lenguage-box {
@@ -737,15 +746,15 @@
   }
 
   .lenguage-box img {
-    height: 42px;
+    height: 70px;
   }
 
   .lenguage-box i {
-    font-size: 3rem;
+    font-size: 6rem;
   }
 
   .lenguage-box p {
-    font-size: 0.9rem;
+    font-size: 1.3rem;
     width: 100%;
   }
 
