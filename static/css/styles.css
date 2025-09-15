@@ -243,11 +243,11 @@
   opacity: 0.7;
 }
 
-.bg-gray-two-resp{
+.bg-gray-two-resp {
   display: none;
 }
 
-.bg-gray-resp{
+.bg-gray-resp {
   display: none;
 }
 
@@ -342,6 +342,7 @@
   align-items: center;
   justify-content: space-between;
   position: relative;
+  border: 1px solid red;
 }
 
 .bg-works {
@@ -363,11 +364,11 @@
   z-index: -1;
 }
 
-.cont-bg-works-resp-r{
+.cont-bg-works-resp-r {
   display: none;
 }
 
-.cont-bg-works-resp-l{
+.cont-bg-works-resp-l {
   display: none;
 }
 
@@ -407,32 +408,35 @@
 
 .cont-works-l {
   width: 30%;
-  height: 70%;
+  height: 90%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  gap: 25px;
+  justify-content: space-between;
   z-index: 1;
 }
 
 .cont-works-l a {
   width: 80%;
-  height: 35%;
+  height: 22%;
   border-radius: 20px;
   position: relative;
   background-color: rgba(255, 255, 255, 0.836);
   backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .cont-works-l a p {
   position: absolute;
   z-index: 1;
-  top: 15px;
-  left: 15px;
   font-size: 1.1rem;
   letter-spacing: 1px;
   color: white;
+  text-align: center;
+  line-height: 1.5;
+  text-transform: uppercase;
 }
 
 .cont-works-l a img {
@@ -458,32 +462,35 @@
 
 .cont-works-r {
   width: 30%;
-  height: 70%;
+  height: 90%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  gap: 25px;
+  justify-content: space-between;
   z-index: 1;
 }
 
 .cont-works-r a {
   width: 80%;
-  height: 35%;
+  height: 22%;
   border-radius: 20px;
   position: relative;
   background-color: rgba(255, 255, 255, 0.781);
   backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .cont-works-r a p {
   position: absolute;
   z-index: 1;
-  top: 15px;
-  right: 15px;
   font-size: 1.1rem;
   letter-spacing: 1px;
   color: white;
+  text-align: center;
+  line-height: 1.5;
+  text-transform: uppercase;
 }
 
 .cont-works-r a img {
@@ -773,14 +780,13 @@
     justify-content: flex-start;
     gap: 10px;
     position: relative;
-
   }
 
-  .bg-works h4{
-    font-size: 2.0rem;
+  .bg-works h4 {
+    font-size: 2rem;
   }
 
-  .bg-works p{
+  .bg-works p {
     font-size: 1.1rem;
   }
 
@@ -901,7 +907,7 @@
   .logo {
     font-size: 1.2rem;
   }
-  
+
   .logo-head {
     font-size: 1.5rem;
   }
@@ -909,12 +915,12 @@
   .bg-gray {
     display: none;
   }
-  
+
   .bg-gray-two {
     display: none;
   }
 
-  .bg-gray-two-resp{
+  .bg-gray-two-resp {
     display: block;
     position: absolute;
     top: -20px;
@@ -924,7 +930,7 @@
     opacity: 0.5;
   }
 
-  .bg-gray-resp{
+  .bg-gray-resp {
     display: block;
     position: absolute;
     top: -20px;
