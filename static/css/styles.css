@@ -342,7 +342,6 @@
   align-items: center;
   justify-content: space-between;
   position: relative;
-  border: 1px solid red;
 }
 
 .bg-works {
@@ -767,7 +766,7 @@
 
   .works-view {
     width: 100%;
-    height: 200vh;
+    height: auto;
     margin-top: 50px;
     flex-direction: column-reverse;
     align-items: center;
