@@ -99,20 +99,19 @@
 .container-name {
   width: 100%;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 10px;
 }
 
 .name-sec {
-  width: 40%;
-  height: 120px;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
   gap: 15px;
-  padding-left: 5vw;
-  animation: textColor 2s linear;
 }
 
 @keyframes textColor {
@@ -125,16 +124,27 @@
 }
 
 .name-sec h1 {
-  font-size: 2.3rem;
-  font-weight: bold;
-  letter-spacing: 2px;
+  width: 100%;
+  font-size: 7.5vw;
+  font-weight: light;
+  letter-spacing: 4px;
   color: rgb(0, 68, 255);
+  text-align: center;
+  animation: imgTrans 2s linear;
 }
 
-.name-sec h2 {
-  font-size: 1.6rem;
+.flexBox {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flexBox h2 {
+  font-size: 1.5rem;
   letter-spacing: 1px;
   color: rgb(156, 156, 156);
+  animation: textColor 2s linear;
 }
 
 .img-sec {
@@ -150,7 +160,6 @@
   height: 100%;
   border-radius: 100px 0px 0px 100px;
   object-fit: cover;
-  animation: imgTrans 2s linear;
 }
 
 .container-btns {
@@ -158,22 +167,30 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 100px;
 }
 
 .cont-img-btns {
-  width: 60%;
+  width: 75%;
   height: 15vh;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
+  position: relative;
+  animation: imgTrans 2s linear;
 }
 
-.cont-img-btns img {
+.cont-img-btns .person {
+  height: 52vh;
+  position: absolute;
+  bottom: 0px;
+}
+
+.cont-img-btns .bgFirst {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 0px 100px 100px 0px;
-  animation: imgTrans 2s linear;
+  border-radius: 100px 100px 100px 100px;
 }
 
 @keyframes imgTrans {
@@ -186,19 +203,17 @@
 }
 
 .con-btns {
-  width: 40%;
-  height: 120px;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 3%;
+  gap: 5%;
 }
 
 .con-btns a {
-  width: 60px;
-  height: 60px;
+  min-width: 45px;
+  aspect-ratio: 1;
   border-radius: 50%;
-  border: none;
+  border: 1px solid rgb(156, 156, 156);
   background-color: rgb(223, 223, 223);
   animation: btns 2s linear;
   display: flex;
@@ -217,18 +232,18 @@
 }
 
 .con-btns a .cel {
-  font-size: 1.3rem;
-  color: rgb(0, 68, 255);
+  font-size: 1.1rem;
+  color: rgb(156, 156, 156);
 }
 
 .con-btns a .wss {
-  font-size: 1.7rem;
-  color: rgb(0, 68, 255);
+  font-size: 1.4rem;
+  color: rgb(156, 156, 156);
 }
 
 .con-btns a .mail {
-  font-size: 1.5rem;
-  color: rgb(0, 68, 255);
+  font-size: 1.3rem;
+  color: rgb(156, 156, 156);
 }
 
 .con-btns a:hover {
@@ -725,45 +740,30 @@
 }
 
 @media screen and (max-width: 700px) {
-  .container-name {
-    flex-direction: column;
-    align-items: flex-end;
-  }
-
-  .name-sec {
+  .flexBox {
     width: 100%;
-    justify-content: flex-start;
+    flex-direction: column;
     align-items: center;
-    padding-left: 0vw;
-  }
-
-  .name-sec h1 {
-    font-size: 1.8rem;
-  }
-
-  .name-sec h2 {
-    font-size: 1.3rem;
-  }
-
-  .img-sec {
-    width: 70%;
-    height: 12vh;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
   }
 
   .container-btns {
     flex-direction: column;
-    align-items: flex-start;
-    gap: 30%;
+    align-items: center;
+    gap: 0%;
   }
 
   .cont-img-btns {
-    width: 70%;
-    height: 12vh;
-    display: flex;
-    justify-content: flex-start;
+    width: 100%;
+  }
+
+  .cont-img-btns .person {
+    height: 37vh;
+    bottom: 0px;
+  }
+
+  .cont-img-btns .bgFirst {
+    border-radius: 0px;
   }
 
   .con-btns {
@@ -889,7 +889,7 @@
     z-index: -1;
     left: 0px;
     top: -70px;
-        gap: 70px;
+    gap: 70px;
   }
 
   .cont-bg-works-resp-l {
@@ -929,7 +929,6 @@
 
   .cont-works-r a p {
     left: auto;
-
   }
 
   .sec-contact {
@@ -1034,19 +1033,19 @@
   }
 
   .flex-items {
-  flex-direction: column;
-  gap: 70px;
-}
+    flex-direction: column;
+    gap: 70px;
+  }
 
-.flex-items a {
-  width: 85%;
-  height: 22%;
-  border-radius: 20px;
-  position: relative;
-  background-color: rgba(255, 255, 255, 0.781);
-  backdrop-filter: blur(4px);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+  .flex-items a {
+    width: 85%;
+    height: 22%;
+    border-radius: 20px;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.781);
+    backdrop-filter: blur(4px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
